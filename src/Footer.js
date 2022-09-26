@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
-	const today = new Date();
-
+const Footer = ({ items }) => {
 	return (
 		<footer>
-			<p>Copyright &copy; {today.getFullYear()}</p>
+			<p>
+				{items.length} List {items.length > 1 ? 'Items' : 'Item'}
+			</p>
 		</footer>
 	);
 };
